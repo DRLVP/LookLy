@@ -1,11 +1,39 @@
 /**********************************
     REUSEBLE UTILITY CLASS STYLING
 **********************************/
+.container{
+    padding: 0.5rem 5rem;
+}
 
+.primary_btn{
+    cursor: pointer;
+    font-size: var(--sm-text);
+    font-family: 'Cardo', serif;
+    padding: 0.3rem 1rem;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 2px 4px 8px var(--secondary-bg-color);
+    background: var(--primary-btn-color);
+    color:var(--primary-text-color)
+}
+.primary_btn:hover{
+    background: var(--hover-color);
+    /* color: var(--primary-text-color); */
+}
      /*=========================
         CSS VARIABLES
     =========================*/
 
 :root{
-    --main-bg-color: #000000;
+    --main-bg-color: rgb(246, 178, 183);
+    --secondary-bg-color: #9044c6;
+    --primary-text-color: #4d091a;
+    --secondary-text-color: #a13a3d; 
+    --primary-btn-color:#c53c68;
+    --hover-color: #fb6f92ff;
+    --bg-text:4rem;
+    --md-text:2rem;
+    --sm-text:1.5rem;
 }
+

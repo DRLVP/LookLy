@@ -1,7 +1,10 @@
 /**************************
     GOOGLE FONT CDN
 **************************/
-
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Cinzel:wght@400;700&family=Zilla+Slab:wght@400;600;700&display=swap');
+/* font-family: 'Cardo', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Zilla Slab', serif; */
 
 
 /**************************
@@ -17,10 +20,18 @@
 /**************************
     SET DEFAULT STYLING
 **************************/
-h1{};
-h2{}
-p{};
-a{}
+body{
+    background: var(--main-bg-color);
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Cardo', serif;
+}
+p{
+    font-family: 'Zilla Slab', serif;
+}
+a{
+    font-family: 'Cinzel', serif;
+}
 
 /**************************
     HEADER SECTION STYLING
@@ -29,12 +40,124 @@ a{}
     /*=========================
         NAVBAR STYLING
     =========================*/
+.nav_bar{
+    width: 100vw;
+    height: var(--bg-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 4px #a2a8d3;
+}
+.blur__header{
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.logo_img{
+    width: 250px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
 
+.nav_list{
+    display: flex;
+    list-style: none;
+}
+.nav_items{
+    font-size: var(--sm-text);
+    margin: 0 10px;
+    padding: 2px 5px;
+}
+.nav_link{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: 0.3ms ease-in;
+}
+.nav_link:hover{
+    color: var(--hover-color);
+    text-decoration-line: underline;
+}
 
 
 /**************************
     MAIN SECTION STYLING
 **************************/
+    /*=========================
+        HOME SECTION STYLING
+    =========================*/
+
+.home_section{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: url(/public/assets/img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    color: var(--primary-text-color);
+}
+.home_text{
+    width: 50vw;
+}
+.home_heading{
+    font-size: var(--bg-text);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.home_des{
+    font-size: var(--sm-text);
+    margin-bottom: 1.5rem;
+}
+.btn{
+    display: flex;
+}
+
+.home_img {
+    width: 50vw;
+}
+.home_img img{
+    width: 100%;
+    object-fit:cover;
+}
+
+    /*=========================
+        BLOG SECTION STYLING
+    =========================*/
+.blog_section{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-text-color);
+}
+.blogs_heading{
+    font-size: var(--bg-text);
+    margin-bottom: var(--md-text);
+
+}
+.all_blogs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blog_card{
+    width: 20vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    margin-left:  1.5rem;
+    align-items: center;
+    background: url(/public/assets/img/bg.png);
+    object-fit: fill;
+}
+
+.blog_img{
+    width: 80%;
+}
 
 
 /**************************
